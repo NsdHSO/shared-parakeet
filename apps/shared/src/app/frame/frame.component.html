@@ -1,0 +1,15 @@
+<div (click)="goToRoute(['parent', 'edit'])">Edit</div>
+<mat-sidenav-container class="example-container" [hasBackdrop]="false">
+
+    <mat-sidenav
+      #sidenav
+      mode="side"
+      position="end"
+      style="width: 70%;"
+    >
+      <router-outlet name="sidenav"></router-outlet>
+    </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet name="primary"></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
