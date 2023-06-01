@@ -14,7 +14,7 @@ export const appRoutes: Route[] = [
         outlet: 'primary'
       },
       {
-        path: 'parent',
+        path: 'driver',
         loadComponent: () => import('./frame/frame-drawer/frame-drawer.component').then(
           c => c.FrameDrawerComponent),
         outlet: 'sidenav',

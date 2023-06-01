@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "build": "nx build shared",
-    "start": "nx serve shared --open"
+    "start": "nx serve shared"
   },
   "private": true,
   "dependencies": {
@@ -24,6 +24,7 @@
     "zone.js": "~0.13.0"
   },
   "devDependencies": {
+    "@angular-architects/module-federation": "^16.0.3",
     "@angular-devkit/build-angular": "~16.0.0",
     "@angular-devkit/core": "~16.0.0",
     "@angular-devkit/schematics": "~16.0.0",
