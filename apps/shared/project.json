@@ -15,7 +15,11 @@
         "main": "apps/shared/src/main.ts",
         "polyfills": ["zone.js"],
         "tsConfig": "apps/shared/tsconfig.app.json",
-        "assets": ["apps/shared/src/favicon.ico", "apps/shared/src/assets"],
+        "assets": [
+          "apps/shared/src/favicon.ico",
+          "apps/shared/src/assets",
+          "apps/shared/src/netlify.toml"
+        ],
         "styles": ["apps/shared/src/styles.scss"],
         "scripts": [],
         "customWebpackConfig": {
