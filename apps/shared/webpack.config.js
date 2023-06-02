@@ -1,5 +1,6 @@
 const {withModuleFederationPlugin, shareAll} = require("@angular-architects/module-federation/webpack");
 module.exports = withModuleFederationPlugin({
+  library: { type: "module" },
 
   filename: "remoteEntry.js",
   name: 'frameDrawer',
