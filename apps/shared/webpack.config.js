@@ -5,8 +5,8 @@ module.exports = withModuleFederationPlugin({
   name: 'frameDrawer',
   remotes: [],
   exposes: {
-    FrameComponent: 'apps/shared/src/app/frame/frame.component.ts',
-    DrawerComponent: 'apps/shared/src/app/frame/frame-drawer/frame-drawer.component.ts',
+    './FrameComponent': 'apps/shared/src/app/frame/frame.component',
+    './DrawerComponent': 'apps/shared/src/app/frame/frame-drawer/frame-drawer.component',
   },
   shared: {
     ...shareAll({ singleton: true, strictVersion: true, requiredVersion: 'auto' }),
